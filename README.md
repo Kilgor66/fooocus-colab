@@ -1,11 +1,13 @@
 # Fooocus Custom Colab & Local Setup Framework
 
 An optimized deployment framework and launcher script for **Fooocus** (SDXL-based image generation engine). Designed for Google Colab with Google Drive storage persistence, custom checkpoint presets, and automated source fixes.
+An optimized deployment framework and launcher script for Fooocus (SDXL-based image generation engine). Designed for Google Colab with Google Drive storage persistence, custom checkpoint presets, and automated source fixes. 100% free to run using Google Colab's free GPU tier — no paid API keys or subscriptions required.
 
 ---
 
 ## Key Features & Modifications
 
+100% Free Cloud Execution: Runs on Google Colab's free GPU tier (T4) without requiring paid API credits, monthly subscriptions, or local high-end hardware.
 * **Google Drive Persistence:** Downloaded `.safetensors` models, LoRAs, and generated images persist in Google Drive across Colab session resets.
 * **`no_init_weights` Fix:** Automates an inline hotfix in `modules/patch_clip.py` to prevent execution crashes with recent PyTorch/Transformers releases.
 * **Automated Model Download:** Automatically fetches the custom TalmendoXL checkpoint directly to your Google Drive on the first run.
